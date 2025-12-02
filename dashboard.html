@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link href="dashboard.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <img src="stu-logo.png" class="stu-logo-dash" alt="">
+            </div>
+            <div class="d-btn">
+                <button class="btn-dash" id="registerBtn">Register</button>
+                <button class="btn-dash logout" id="logOut">Log Out</button>
+            </div>
+        </div>
+
+        <h1>Registered Students</h1>
+        <div id="container">
+            <!-- <div class="card">
+                <h3>Syeda Nahal Mansoor</h3>
+                <p><b>Age</b> : 17</p>
+                <p><b>Course</b> : Modern Web and App Development</p>
+                <p><b>Class Timings</b> : 9:00 AM - 11:00 AM</p>
+                <p><b>Trainer</b> : Miss Hina</p>
+                <p><b>Campus</b> : Malir Campus</p>
+                <button class="card-btn">Edit</button>
+                <button class="card-btn delete">Delete</button>
+            </div> -->
+        </div>
+
+        <div id="studentModal" style="display: none;">
+              <div class="modal-inner">
+                <h2 id="modalTitle">Register Student</h2>
+            
+                <input id="studentFullName" placeholder="Full Name">
+                <input id="studentAge" type="number" placeholder="Age">
+            
+                <select id="studentCourse">
+                  <option value="" disabled selected hidden>-- Select Course --</option>
+                  <option value="Modern Web and App Development">Modern Web and App Development</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="App Development">App Development</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="AI & Machine Learning">AI & Machine Learning</option>
+                  <option value="Software Engineering">Software Engineering</option>
+                  <option value="Data Science">Data Science</option>
+                </select>
+            
+                <select id="studentTimings">
+                  <option value="" disabled selected hidden>-- Select Class Timing --</option>
+                  <option value="9:00 AM - 11:00 AM">9:00 AM - 11:00 AM</option>
+                  <option value="12:00 PM - 2:00 PM">12:00 PM - 2:00 PM</option>
+                  <option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM</option>
+                  <option value="4:00 PM - 6:00 PM">4:00 PM - 6:00 PM</option>
+                </select>
+            
+                <select id="studentTrainer">
+                  <option value="" disabled selected hidden>-- Select Trainer --</option>
+                  <option value="Miss Hina">Miss Hina</option>
+                  <option value="Miss Fatima">Miss Fatima</option>
+                  <option value="Sir Ahmed">Sir Ahmed</option>
+                </select>
+            
+                <select id="studentCampus">
+                  <option value="" disabled selected hidden>-- Select Campus --</option>
+                  <option value="Malir Campus">Malir Campus</option>
+                  <option value="North Campus">North Campus</option>
+                  <option value="Gulshan Campus">Gulshan Campus</option>
+                  <option value="Bahadurabad Campus">Bahadurabad Campus</option>
+                </select>
+                <button class="card-btn" id="saveStudentBtn">Register</button>
+                <button class="card-btn" id="cancelStudentBtn">Cancel</button>
+              </div>
+            </div>
+
+
+
+    </div>
+</body>
+<script src="firebase.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js" type="module"></script>
+</html>

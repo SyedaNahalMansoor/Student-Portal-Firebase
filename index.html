@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student DashBoard</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="design">
+            <h1>Students Registration Portal</h1>
+            <h3>Hello! Create your account to access the student portal.</h3>
+            <img src="stu-logo.png" class="stu-logo" alt="">
+        </div>
+
+        <div class="signup">
+            <h1>Sign Up</h1>
+            <label>
+                Name : <input type="text" id="name" required>
+            </label>
+            <label>
+                Email : <input type="email" id="email" required>
+            </label>
+            <label>
+                Password : <input type="password" id="password" required>
+            </label>
+            <button id="signUp" class="btn">Sign Up</button>
+            <p class="p-login">Already have an account?<a href="login.html">Login</a></p>
+        </div>
+
+    </div>
+
+</body>
+<script src="firebase.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js" type="module"></script>
+</html>
